@@ -25,7 +25,7 @@ def nuevoestu(request):
         else:
             data['mensaje'] = 'Registro fallido'
         
-    return render(request, 'registrar.html', data)
+    return render(request, 'datospersonals.html', data)
 
 def editar(request, id_estudiante):
     registro = get_object_or_404(models.Estudiante, id_estudiante = id_estudiante)

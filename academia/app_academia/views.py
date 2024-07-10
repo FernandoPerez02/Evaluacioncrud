@@ -47,3 +47,4 @@ def editar(request, id_estudiante):
 def eliminar(request, id_estudiante):
     registro = get_object_or_404(models.Estudiante, id_estudiante = id_estudiante)
     registro.delete()
+    return redirect('tabla')
